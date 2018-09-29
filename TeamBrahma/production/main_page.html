@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Welcome to the Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="http://www.iitg.ac.in/" class="site_title"><!-- <i class="fa fa-study"></i> --> <span>IIT Guwahati</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <a href="https://www.facebook.com/priyanshu.singh.1690"><img src="images/priyanshu.jpg" alt="..." class="img-circle profile_img"></a>
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Priyanshu Singh</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  </a>
+                  <li><a><i class="fa fa-home"></i> Your Utilities <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="http://www.iitg.ac.in/acad/acadCal/Acad_Calendar_2018.htm">Academic Calendar</a></li>
+                      <li><a href="http://intranet.iitg.ernet.in/lib/opac.php">Online Lib Book search</a></li>
+                      <li><a href="http://intranet.iitg.ernet.in/repo/">Software Repo</a></li>
+                      <li><a href="https://automation.iitg.ernet.in/ip/">Hostel IP Calculator</a></li>
+                      <li><a href="http://intranet.iitg.ernet.in/nb/admin/HolidayList2018.pdf">Holiday List</a></li>
+                      <li><a><!-- <i class="fa fa-table"></i> --> Bus Timings <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="http://shilloi.iitg.ernet.in/~establishment/bus-timings-2010.pdf">To & from Guwahati City</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~establishment/Revised%20Internal%20Campus%20Bus%20Schedule.pdf">Within Institute Campus</a></li>
+                    </ul>
+                    </ul>
+                  </li>
+                  <li><a href="https://www.iitg.ac.in/acad/form.php"><i class="fa fa-edit"></i> Forms <!-- <span class="fa fa-chevron-down"></span> --></a>
+                  </li>
+                  <li><a href="https://www.iitg.ac.in/cb/"><i class="fa fa-desktop"></i> Complaint Booking <!-- <span class="fa fa-chevron-down"></span> --></a>
+
+                    <li><a href="http://www.iitg.ac.in/aa/pages/campusmap/index.php?hq"><i class="fa fa-desktop"></i> Campus Map <!-- <span class="fa fa-chevron-down"></span> --></a>
+                    
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Departments <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="http://shilloi.iitg.ernet.in/~biotech/">BioSciences&Bioengineering</a></li>
+                      <li><a href="http://local.iitg.ernet.in/chemeng/home">Chemical Engineering</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~chem/">Chemistry</a></li>
+                      <li><a href="http://www.iitg.ac.in/civil/site/">Civil Engineering</a></li>
+                      <li><a href="http://jatinga.iitg.ernet.in/cseintranet/">Computer Science Dept</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~design/index.html">Design</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~ece/index.html">Electronics&Electrical Engineering</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~hss/hss/">Humanities and Social Sciences</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~maths/">Mathematics</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~mech/internet/">Mechanical Engineering</a></li>
+                      <li><a href="http://www.iitg.ac.in/phy/">Physics</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="table.html"><i class="fa fa-bar-chart-o"></i> Timetable <!-- <span class="fa fa-chevron-down"></span> --></a>
+                   
+                  </li>
+                  <li><a href="http://shilloi.iitg.ernet.in/~medical/"><i class="fa fa-clone"></i>Medical <!-- <span class="fa fa-chevron-down"></span> --></a>
+                   
+              </div>
+              <div class="menu_section">
+                <h3>Extracurriculars</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-bug"></i> Fests <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../SidePages/impact/techniche.html">Techniche</a></li>
+                      <li><a href="../SidePages/impact/alcheringa.html">Alcheringa</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-windows"></i> Clubs <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../SidePages/impact/tech-clubs.html">Technical Clubs</a></li>
+                      <li><a href="../SidePages/impact/cul-club.html">Cultural Clubs</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../SidePages/impact/sports.html"><i class="fa fa-sitemap"></i> Sporting Clubs <!-- <span class="fa fa-chevron-down"></span> --></a>
+                    
+                  </li>                  
+                  <li><a href="../SidePages/impact/counselling.html"><i class="fa fa-laptop"></i> Counselling help <!-- <span class="label label-success pull-right">Coming Soon</span> --></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login_raut.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/priyanshu.jpg" alt="">Priyanshu Singh
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="https://www.office.com/"> Office365</a></li>
+                    <li><a href="https://piazza.com/iitg.ac.in/fall2018/cs210"> Piazza</a></li>
+                    <li>
+                      <a href="https://intranet.iitg.ernet.in/moodle/login/index.php">
+                        <span>Moodle</span>
+                      </a>
+                    </li>
+                    <li><a href="login_raut.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+          <div class="row tile_count">
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Graduates</span>
+              <div class="count">25000</div>
+              <span class="count_bottom"><i class="green">4% </i> From last Year</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-clock-o"></i> Est. </span>
+              <div class="count">1995</div>
+              <!-- <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span> -->
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
+              <div class="count green">2,500</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>14% </i> Increased</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Females</span>
+              <div class="count">476</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>16% </i> Increased</span>
+            </div>
+            
+          </div>
+          <!-- /top tiles -->
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="dashboard_graph">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <div class="row x_title">
+
+                
+                <div class="col-md-3 col-sm-3 col-xs-12 bg-white" >
+                  <div class="x_title">
+                    <h2>Attendence</h2>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-xs-6" >
+                    <div>
+                      <p>MA201</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 100%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>CS221</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 100%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div>
+                      <p>CS201</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 100%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>CS202</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 100%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-6" >
+                    <div>
+                      <p>HS225</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 100%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="90"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>NSO</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 100%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+
+          </div>
+          <br />
+
+          <div class="row">
+
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="x_panel tile fixed_height_320">
+                <div class="x_title">
+                  <h2>Course Links</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <div class="dashboard-widget-content">
+                    <ul class="quick-list">
+                      <li><i class="fa fa-calendar-o"></i><a href="http://www.iitg.ac.in/jitumath/">MA201</a>
+                      </li>
+                      <li><i class="fa fa-bars"></i><a href="http://jatinga.iitg.ernet.in/~ckarfa/course.html">CS201</a>
+                      </li>
+                      <li><i class="fa fa-bar-chart"></i><a href="http://jatinga.iitg.ernet.in/~asahu/cs221/#LectSlides">CS221</a> </li>
+                      <li><i class="fa fa-line-chart"></i><a href="http://jatinga.iitg.ernet.in/~asahu/cs241/">CS241</a>
+                      </li>
+                      
+                    </ul>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="x_panel tile fixed_height_320 overflow_hidden">
+                <div class="x_title">
+                  <h2>Extra Courses Completed</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <table class="" style="width:100%">
+                    <tr>
+                      
+                      <th>
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                          <p class="">Course</p>
+                        </div>
+                        <div id="haha6" class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                          <p class="">Progress</p>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                     
+                      <td>
+                        <table class="tile_info">
+                          <tr>
+                            <td>
+                              <a href="https://www.coursera.org/learn/machine-learning/home/welcome"><p><i class="fa fa-square blue"></i>Machine Learning </p></a>
+                            </td>
+                            <td id="haha6">70%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_"><p><i class="fa fa-square green"></i>Python </p></a>
+                            </td>
+                            <td id="haha6">100%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="https://www.youtube.com/watch?v=qgGIqRFvFFk&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK"><p><i class="fa fa-square purple"></i>Django </p></a>
+                            </td>
+                            <td id="haha6">40%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="https://www.coursera.org/learn/neural-networks-deep-learning"><p><i class="fa fa-square aero"></i>Deep Learning </p></a>
+                            </td>
+                            <td id="haha6">15%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb"><p ><i class="fa fa-square red"></i>Algorithms </p></a>
+                            </td>
+                            <td id="haha6">50%</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="x_panel tile fixed_height_320">
+                <div class="x_title">
+                  <h2>Bookmarks</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <div class="dashboard-widget-content">
+                    <ul class="quick-list">
+                      <li><i class="fa fa-calendar-o"></i><a href="https://www.coursera.org/learn/machine-learning/home/welcome">ML Course</a>
+                      </li>
+                      <li><i class="fa fa-bars"></i><a href="https://drive.google.com/drive/folders/1veaK2_uIucNWYGiRVPHZYbXdoHiwNP-i">Front End Development</a>
+                      </li>
+                      <li><i class="fa fa-bar-chart"></i><a href="https://docs.google.com/document/d/1do0i5AyZThmD3X_ivLcDNHul2DzeZD0Ym3GQm1eh67I/edit">SWC Material</a> </li>
+                      <li><i class="fa fa-line-chart"></i><a href="http://codeforces.com/problemset?order=BY_SOLVED_DESC">Codeforces</a>
+                      </li>
+                      <li><i class="fa fa-line-chart"></i><a href="https://www.litcharts.com/shakescleare/shakespeare-translations/julius-caesar/act-1-scene-1">Julius Caesar play</a>
+                      </li>
+                      <li><i class="fa fa-line-chart"></i><a href="https://www.codechef.com/">Codechef</a>
+                      </li>
+                      
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            
+
+          </div>
+
+            <div class="col-md-8 col-sm-8 col-xs-12">
+
+
+
+             
+              <div class="row">
+
+
+                <!-- Start to do list -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>To Do List <small>Things to Do</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Settings 1</a>
+                            </li>
+                            <li><a href="#">Settings 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+                      <div class="">
+                        <ul class="to_do">
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Room cleaning on 2nd Oct </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Applying for academic Intern</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Finish reading Looking for Alaska</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Wash the clothes</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Get the NTSE scholarship form signed</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Finish this week's Discrete Assignment</p>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End to do list -->
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <!-- <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div> -->
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    
+  </body>
+</html>

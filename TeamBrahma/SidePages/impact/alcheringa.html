@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Alcheringa</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>      
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "images/bg/bg1.jpg",
+	        "images/bg/bg2.jpg",
+	        "images/bg/bg3.jpg"
+	    ], {duration: 5000, fade: 500, centeredY: true });
+
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{ 	
+              	latitude:40.7566,
+				longitude: -73.9863,
+          	icon: { image: "images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: { 
+              	image: "images/marker.png", 
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+         	latitude:40.7566,
+         	longitude: -73.9863,
+          	zoom: 14 });
+    });
+    </script>
+</head>
+<body>
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand" href="https://www.alcheringa.in/beta/"><h1 id="haha"><span class="pe-7s-music bounce-in"></span> ALCHERINGA</h1></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.alcheringa.in/beta/index.php">Home</a></li>
+                    <li><a href="https://www.alcheringa.in/beta/team.php/">Team</a></li>
+                    <li><a href="https://www.alcheringa.in/beta/gallery.php">Gallery</a></li>
+                    <li><a href="https://www.alcheringa.in/beta/pronites.php">Pro-Nites</a></li> 
+                    <li><a href="https://www.alcheringa.in/beta/contact.php">Contact Us</a></li> 
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">All Links ^ <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.alcheringa.in/beta/events.php">Events</a></li>
+                            <li><a href="https://www.alcheringa.in/rocko/">Rock-O-phonix</a></li>
+                            <li><a href="https://www.alcheringa.in/vn/">Vogue Nation</a></li>
+                            <li><a href="https://www.alcheringa.in/beta/social.php">Social Initiatives</a></li>
+                            <li><a href="https://www.alcheringa.in/registrations/">Registrations</a></li>
+                            <li><a href="https://www.alcheringa.in/rulebooklet.pdf">Rule Booklet</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><span class="search-trigger"><i class="fa fa-search"></i></span></li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="content-wrapper">
+        <section id="services" class="white">
+            <div class="container">
+            <div class="gap"></div> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">What are We?</h2>
+                            <hr>
+                            <p id="haha3">WE ARE THE ETERNAL DREAMTIME!!!</p>
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <a href="https://www.alcheringa.in/beta/gallery.php"><i class="fa fa-camera fa fa-md"></i></a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Glossary</h3>
+                                <p>Head down to our amazing fb page for some amazing moments of ou</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <a href="https://www.alcheringa.in/rocko/"><i class="fa fa-music fa fa-md"></i></a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">RockO-phonix</h3>
+                                <p>Probably the biggest rock contest in India, and certainly the epicentre of the funstorm caused in Alcher</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <a href="https://www.alcheringa.in/beta/events.php"><i class="fa fa-calendar fa fa-md"></i></a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Events</h3>
+                                <p>Such a large array of fun events which will definitely make you all feeling like Sunshine :P </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <a href="https://www.alcheringa.in/beta/pronites.php"><i class="fa fa-star fa fa-md"></i></a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Pronites</h3>
+                                <p>Ah, the pronites. The funfilled, days of our lives. The stars of Bollywood, the internation phenomenons crash in at nights and make you all go wild.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <a href="https://www.alcheringa.in/beta/social.php"><i class="fa fa-hand-o-right fa fa-md"></i></a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Social Initiatives</h3>
+                                <p>We as a part of elite indians feel our responsibility to make India a developed country, to cater to the the dreams in the sobby eyes of every poor Indian kid who wants to become something important for his family, his nation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <a href="https://www.alcheringa.in/beta/gc.php"><i class="fa fa-trophy fa fa-md"></i></a>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">General Championship</h3>
+                                <p>We have a massive prize for the winners of the General championship, which is for the overall winners of the grand event of Alcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">What to expect from us!</h2>
+                            <hr>
+                            <p>We make epic shit happen!</p>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="container">     
+            <div class="row">            
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-red bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Fun</h3>
+	                            <span>We know it'll be worth it</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="90.0%" style="width: 90.0%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">90.0</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-cyan bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Boredom</h3>
+	                            <span>We'll make you a CHILD AGAIN!</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="0%" style="width: 0%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">0</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-primary bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Campus Beauty</h3>
+	                            <span>Heck, we have the best campus in India</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="90%" style="width: 90%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">90</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-pink bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Events</h3>
+	                            <span>World class speakers and participants from around the globe</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="80%" style="width: 80%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">80</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="gap"></div>
+        	</div>
+        </section>
+
+
+        <section id="about-us" class="white">
+        	<div class="container">
+	            <div class="gap"></div>
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div class="center gap fade-down section-heading">
+	                        <h2 class="main-title">A Little About Us</h2>
+	                        <hr>
+	                        <p>Just this much is enough, you'll leave the fest saying 2 magical words, the words we have been saying all year.... <h1 class="haha4">HAIL ALCHER!!</h1></p>
+	                    </div>                
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-md-10 col-md-offset-1 fade-up">
+                        <h1> THE LARGEST CULTURAL FEST OF NORTH EAST</h1>
+                        <br \>
+
+	                    <p>Alcheringa is the annual cultural festival of Indian Institute of Technology (IIT), Guwahati. Started in 1996 by a group of students, Alcheringa, IIT Guwahati has now become one of the biggest college level cultural events in Asia. Spread over 3 days and 4 nights, Alcheringa attracts people from all over the world with its spectacular events and competitions. The coming edition of Alcheringa strives to be the greatest till date!. It is scheduled to be held from 31st January 2019 to 3rd February 2019.</p>
+
+                        <h3> A little about UDAAN, the thing close to our heart</h3>
+
+                        <p>Originated under the name "Bachpan" in 2011, Udaan is a social initiative taken by the students of IIT Guwahati which aims on delivering hope to those who never had the opportunity. It aims in the upliftment of the underprivileged through the conduction of various educational workshops and innovational programs.
+
+During their vacations, students from IIT Guwahati and several other colleges conduct Udaan where they reach out to various underprivileged children from orphanages, villages and slums in their locality, and spare a weekend to give flights to their hopes with the help of various documentaries, presentations, games and motivation. Udaan reached 52 cities across India in 2015. Our mission is to rewrite the pages of as few thousand lives that were thought to be too cheap to live. To reach out to them and to adorn their lives with some wonderful moments.</p>
+
+
+
+	                </div>
+	                <div class="col-md-4 fade-up">
+
+	                </div>
+	            </div>
+
+        <section id="stats" class="divider-section">
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <p align="center" id="haha2"> Our Achievements!! </p>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"></span>
+                            <h1><span class="counter">23</span></h1>
+                            <h3>Editions</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"></span>
+                            <h1><span class="counter">1,10,000</span></h1>
+                            <h3>+Footfalls</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"></span>
+                            <h1><span class="counter">450</span></h1>
+                            <h3>+Colleges</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"></span>
+                            <h1><span class="counter">80</span></h1>
+                            <h3>+Events</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div> 
+        </section>
+
+            <section id="testimonial-carousel" class="divider-section">
+            <div class="gap"></div>
+	            <div class="container">
+	                <div class="row">
+                    	<div class="center gap fade-down section-heading">
+                            <h2 class="main-title">What They Have Been Saying</h2>
+                            <hr>
+                            <p>An experience as vivid as Wet Dreams of Orgasmic proportions</p>
+                            <div class="gap"></div>
+                        </div>                         
+	                    <div class='col-md-offset-2 col-md-8 fade-up'>
+	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+	                            
+	                            <ol class="carousel-indicators">
+	                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="1"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="2"></li>
+	                            </ol>                                
+	                            
+	                            <div class="carousel-inner">                                
+	                              
+	                                <div class="item active">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/vishal-dadlani.jpg" style="width: 150px;height:150px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>The place of Magic</p>
+	                                                <small>Vishal, popular Bollywood music composer</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                                
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/miranda.jpg" style="width: 150px;height:150px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>One of the pleasures of visiting this beautiful campus is meeting these wonderful kids who make this epic shit happen, I am glad I visited India, the city is magic, the people are magic.!!</p>
+	                                                <small>Diego Miranda, World's 58th ranked DJ</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                                
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/mika.jpg" style="width: 150px;height:150px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>What to say, was stunned by the magnitude of this event put forward by these wonderkids. The experience was amazing, and one of the best I've had till date</p>
+	                                                <small>Mika Singh</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                            </div>                                     
+	                        </div> 
+	                    </div>
+	                </div>
+	                <div class="gap"></div>
+	      		</div>
+      		</section>
+
+            <section id="contact" class="white">
+                <div class="container">
+                	<div class="gap"></div>
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Get In Touch</h2>
+                        <hr>
+                        <p>The Biggest Cultural Fest of North East awaits you</p>
+                    </div>    
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 fade-up">
+                            <h3>Contact Information</h3>
+                            <p><span class="icon icon-home"></span>North Guwahati, Guwahati, Assam<br/>
+                                <span class="icon icon-phone"></span> +91-361-2583000<br/>
+                                <span class="icon icon-mobile"></span> +91-361-2690762<br/>
+                                <span class="icon icon-envelop"></span> <a href="https://www.alcheringa.in/beta/contact.php">
+publicrelations@alcheringa.in</a> <br/>
+                                <span class="icon icon-twitter"></span> <a href="https://www.facebook.com/alcheringaiitg/">Follow us on facebook</a> <br/>
+                                <span class="icon icon-facebook"></span> <a href="https://www.facebook.com/priyanshu.singh.1690">Priyanshu Singh, Alcher Creatives</a> <br/>
+                            </p>
+                        </div>
+                    
+                        <div class="col-md-8 fade-up">
+                            <h3>Drop Us A Message</h3>
+                            <br>
+                            <br>
+                            <div id="message"></div>
+                            <form method="post" action="sendemail.php" id="contactform">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                                <input type="text" name="email" id="email" placeholder="Email" />
+                                <input type="text" name="website" id="website" placeholder="College" />
+                                <textarea name="comments" id="comments" placeholder="Comments"></textarea>
+                                <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>  
+                    <div class="gap"></div>         
+                </div>
+            </section>
+        </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>   
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script> 
+    <script src="js/init.js"></script>
+</body>
+</html>

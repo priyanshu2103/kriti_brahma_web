@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Time Table</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!--Weekly table style-->
+    <link href="table.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="http://www.iitg.ac.in/" class="site_title"><!-- <i class="fa fa-study"></i> --> <span>IIT Guwahati</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <a href="https://www.facebook.com/priyanshu.singh.1690"><img src="images/priyanshu.jpg" alt="..." class="img-circle profile_img"></a>
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Priyanshu Singh</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="main_page.html"><i class="fa fa-home"></i> Go to dashboard <!-- <span class="fa fa-chevron-down"></span> -->
+                  <li><a><i class="fa fa-home"></i> Your Utilities <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="http://www.iitg.ac.in/acad/acadCal/Acad_Calendar_2018.htm">Academic Calendar</a></li>
+                      <li><a href="http://intranet.iitg.ernet.in/lib/opac.php">Online Lib Book search</a></li>
+                      <li><a href="http://intranet.iitg.ernet.in/repo/">Software Repo</a></li>
+                      <li><a href="https://automation.iitg.ernet.in/ip/">Hostel IP Calculator</a></li>
+                      <li><a href="http://intranet.iitg.ernet.in/nb/admin/HolidayList2018.pdf">Holiday List</a></li>
+                      <li><a><!-- <i class="fa fa-table"></i> --> Bus Timings <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="http://shilloi.iitg.ernet.in/~establishment/bus-timings-2010.pdf">To & from Guwahati City</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~establishment/Revised%20Internal%20Campus%20Bus%20Schedule.pdf">Within Institute Campus</a></li>
+                    </ul>
+                    </ul>
+                  </li>
+                  <li><a href="https://www.iitg.ac.in/acad/form.php"><i class="fa fa-edit"></i> Forms <!-- <span class="fa fa-chevron-down"></span> --></a>
+                  </li>
+                  <li><a href="https://www.iitg.ac.in/cb/"><i class="fa fa-desktop"></i> Complaint Booking <!-- <span class="fa fa-chevron-down"></span> --></a>
+                    
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Departments <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="http://shilloi.iitg.ernet.in/~biotech/">BioSciences&Bioengineering</a></li>
+                      <li><a href="http://local.iitg.ernet.in/chemeng/home">Chemical Engineering</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~chem/">Chemistry</a></li>
+                      <li><a href="http://www.iitg.ac.in/civil/site/">Civil Engineering</a></li>
+                      <li><a href="http://jatinga.iitg.ernet.in/cseintranet/">Computer Science Dept</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~design/index.html">Design</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~ece/index.html">Electronics&Electrical Engineering</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~hss/hss/">Humanities and Social Sciences</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~maths/">Mathematics</a></li>
+                      <li><a href="http://shilloi.iitg.ernet.in/~mech/internet/">Mechanical Engineering</a></li>
+                      <li><a href="http://www.iitg.ac.in/phy/">Physics</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="table.html"><i class="fa fa-bar-chart-o"></i> Timetable <!-- <span class="fa fa-chevron-down"></span> --></a>
+                   
+                  </li>
+                  <li><a href="http://shilloi.iitg.ernet.in/~medical/"><i class="fa fa-clone"></i>Medical <!-- <span class="fa fa-chevron-down"></span> --></a>
+                   
+              </div>
+              <div class="menu_section">
+                <h3>Extracurriculars</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-bug"></i> Fests <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../Templates/impact/techniche.html">Techniche</a></li>
+                      <li><a href="../Templates/impact/alcheringa.html">Alcheringa</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-windows"></i> Clubs <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../Templates/impact/tech-clubs.html">Technical Clubs</a></li>
+                      <li><a href="../Templates/impact/cul-club.html">Cultural Clubs</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../Templates/impact/sports.html"><i class="fa fa-sitemap"></i> Sporting Clubs <!-- <span class="fa fa-chevron-down"></span> --></a>
+                    
+                  </li>                  
+                  <li><a href="../Templates/impact/counselling.html"><i class="fa fa-laptop"></i> Counselling help <!-- <span class="label label-success pull-right">Coming Soon</span> --></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login2.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/priyanshu.jpg" alt="">Priyanshu Singh
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="https://www.office.com/"> Office365</a></li>
+                    <li><a href="https://piazza.com/iitg.ac.in/fall2018/cs210"> Piazza</a></li>
+                    <li>
+                      <a href="https://intranet.iitg.ernet.in/moodle/login/index.php">
+                        <span>Moodle</span>
+                      </a>
+                    </li>
+                    <li><a href="login2.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="dashboard_graph">
+                <div class="x_title">
+                  <h1>Your Weekly Schedule</h1>
+                  <div class="clearfix"></div>
+                </div>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <div class="row x_title">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>
+                <span class="day">1</span>
+                <span class="long">Monday</span>
+                <span class="short">Mon</span>
+              </th>
+              <th>
+                <span class="day">2</span>
+                <span class="long">Tuesday</span>
+                <span class="short">Tue</span>
+              </th>
+              <th>
+                <span class="day">3</span>
+                <span class="long">Wendsday</span>
+                <span class="short">We</span>
+              </th>
+              <th>
+                <span class="day">4</span>
+                <span class="long">Thursday</span>
+                <span class="short">Thur</span>
+              </th>
+              <th>
+                <span class="day active">5</span>
+                <span class="long">Friday</span>
+                <span class="short">Fri</span>
+              </th>
+              <th>
+                <span class="day">6</span>
+                <span class="long">Saturday</span>
+                <span class="short">Sat</span>
+              </th>
+              <th>
+                <span class="day">7</span>
+                <span class="long">Sunday</span>
+                <span class="short">Sun</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="hour" rowspan="4"><span>8:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hour" rowspan="4"><span>9:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hour" rowspan="4"><span>10:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hour" rowspan="4"><span>11:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hour" rowspan="4"><span>12:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hour" rowspan="4"><span>2:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hour" rowspan="4"><span>3:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hour" rowspan="4"><span>4:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hour" rowspan="4"><span>5:00</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+                </div>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+
+          </div>
+          <br />
+          <!--page conteny end-->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+  </body>
+</html>
