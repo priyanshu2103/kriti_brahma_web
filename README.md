@@ -9,3 +9,6 @@ Go zip the kriti_web_master first, delete the vendors repo in Team Brahma... and
 Go in the production section and open main_page.html
 This is the main page.
 Rest all html pages in production and SidePages(directory) are linked to this main page.
+
+https://drive.google.com/open?id=1QYDhZRRTgRyXZ9ONRVzgEiuLT48UKju6
+drive link for complete project just in case github doesn't work
