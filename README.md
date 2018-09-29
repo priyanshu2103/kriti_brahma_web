@@ -1,6 +1,6 @@
 # kriti_brahma_web
 
-Inside Team Brahma, there is one dir missing by the name vendors.
+Inside Team Brahma, there is one dir missing by the name vendors.(actually it is there but it is corrupted)
 I have uploaded a separate repo named vendors.
 Both are private.
 
